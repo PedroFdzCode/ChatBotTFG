@@ -1,0 +1,164 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.container-title {
+  width: 100%;
+  height: 4rem;
+  background: white;
+  display: flex;
+  position:fixed;
+}
+
+.title {
+  width: 100%;
+  height: 4rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-ham {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburguesa {
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 999;
+}
+
+.container-file {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-file-title {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.container-content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.files-uploaded {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-upload {
+  width:40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(224, 224, 224);
+  border: 1.5px rgb(139, 139, 139) solid;
+  border-radius: 1rem;
+}
+
+
+.container {
+  width:100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.info {
+  font-size: 0.75rem;
+}
+
+.upload-btn {
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px rgb(139, 139, 139);
+  border-radius: 1rem;
+}
+
+.img-btn {
+  margin: 20px;
+  display: flex;
+}
+
+.img {
+  width: 3rem;
+}
+
+.container-carousel {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel {
+  width: 4rem;
+  height: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dot {
+  /* background-color: rgb(213, 213, 213); */
+  width:0.7rem;
+  height: 0.7rem;
+  border-radius: 0.5rem;
+  border: black 1.25px solid;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+.container-left {
+  width: 15%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

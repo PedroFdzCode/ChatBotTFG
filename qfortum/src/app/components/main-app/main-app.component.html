@@ -1,0 +1,55 @@
+<input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+
+
+<div class="container-title">
+    <div class="container-ham">
+      <img class="hamburguesa" src="../../../assets/menu-hamburguesa.png">
+    </div>
+    <div class="title">
+      D O C S   A I
+    </div>
+</div>
+
+
+<div class="container-file">
+  <div class="container">
+    <div  class="container-left">
+      <img *ngIf="isActive" (click)="activarFlecha()" class="img" src="../../../assets/left.png">
+    </div>
+    <div class="file-upload">
+      <div class="container-file-title">Sube tus archivos!</div>
+      <div class="container-content">
+        <button mat-mini-fab color="primary" class="upload-btn"
+          (click)="fileUpload.click()">
+
+          <div class="img-btn">
+            <img class="img" src="../../../assets/agregar-documento.png">
+          </div>
+          <a class="info">Arrastre un archivo</a>
+
+        </button>
+      </div>
+      <div class="files-uploaded">
+        <div class="files-text">
+          {{fileName || "No file uploaded yet. "}}
+        </div>
+
+      </div>
+    </div>
+    <div  class="container-left">
+      <img *ngIf="!isActive" (click) = "activarFlecha()" class="img" src="../../../assets/right.png">
+    </div>
+  </div>
+
+  <div class="container-carousel">
+    <div class="carousel">
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
